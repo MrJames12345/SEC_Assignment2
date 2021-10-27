@@ -1,4 +1,4 @@
-package sillypackagenamepleasechange;
+package SEC_Assignment2;
 
 import javafx.application.Application;
 import javafx.collections.FXCollections;
@@ -17,7 +17,7 @@ import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
 
-public class UIExample extends Application
+public class MainApp extends Application
 {
     public static void main(String[] args)
     {
