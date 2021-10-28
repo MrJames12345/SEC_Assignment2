@@ -1,4 +1,4 @@
-package SEC_Assignment2;
+package SEC_Assignment2.coreApp;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -13,11 +13,11 @@ public class MainApp extends Application
     @Override
     public void start(Stage stage)
     {
-        var localeString = getParameters().getNamed().get("locale");
-        if(localeString != null)
-        {
-            BundleHandler.setBundle(localeString);
-        }
+        // var localeString = getParameters().getNamed().get("locale");
+        // if(localeString != null)
+        // {
+        //     BundleHandler.setBundle(localeString);
+        // }
 
         MainGUI mainGui = new MainGUI();
         mainGui.initialise(stage);

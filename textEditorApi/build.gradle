@@ -1,0 +1,4 @@
+
+plugins {
+    id 'SEC_Assignment2.java-library-conventions'
+}

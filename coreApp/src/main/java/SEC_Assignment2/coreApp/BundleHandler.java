@@ -1,4 +1,4 @@
-package SEC_Assignment2;
+package SEC_Assignment2.coreApp;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
