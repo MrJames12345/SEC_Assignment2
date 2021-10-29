@@ -9,6 +9,7 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextInputDialog;
 import javafx.scene.control.ToolBar;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
@@ -108,7 +109,11 @@ public class MainGUI
                 PluginControllerMain pluginController = new PluginControllerMain(textArea, toolBar);
                 pluginObject.start(pluginController);
             }
-            catch( ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException e )
+            catch( ClassNotFoundException e )
+            {
+                (new Alert(AlertType.ERROR, "Error: Class '" + enteredPluginName + "' not found.", ButtonType.OK)).showAndWait();
+            }
+            catch( NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException e )
             {
                 System.out.println("Error loading plugin: [" + e.getClass() + "] " + e.toString());
             }
