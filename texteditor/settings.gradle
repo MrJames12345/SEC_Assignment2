@@ -1,0 +1,3 @@
+
+rootProject.name = 'texteditor'
+include('coreApp', 'textEditorApi', 'textEditorPlugins')

@@ -1,0 +1,9 @@
+plugins {
+    id 'texteditor.java-library-conventions'
+    id 'java'
+}
+
+dependencies {
+    implementation 'org.apache.commons:commons-text'
+    implementation project(':textEditorApi')
+}

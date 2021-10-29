@@ -1,0 +1,4 @@
+
+plugins {
+    id 'texteditor.java-library-conventions'
+}
